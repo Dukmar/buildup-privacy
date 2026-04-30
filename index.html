@@ -66,14 +66,14 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">BuildUp — Home Lifting & Workout Tracker<br>Last updated: March 17, 2026</p>
+    <p class="subtitle">BuildUp — Home Lifting & Workout Tracker<br>Last updated: April 30, 2026</p>
 
     <div class="highlight">
-      <p><strong>The short version:</strong> BuildUp stores all your data on your device. We don't collect it, we don't send it anywhere, and we don't have access to it.</p>
+      <p><strong>The short version:</strong> BuildUp stores your data on your device and in your personal iCloud account so it syncs across your devices and survives reinstalls. We don't collect it, we don't have access to it, and we can't see it.</p>
     </div>
 
     <h2>What Data BuildUp Stores</h2>
-    <p>BuildUp stores the following information locally on your iPhone:</p>
+    <p>BuildUp stores the following information on your iPhone and in your personal iCloud account:</p>
     <ul>
       <li>Workout sessions (exercises, sets, reps, weight, duration)</li>
       <li>Exercise library and custom exercises you create</li>
@@ -81,7 +81,11 @@
       <li>Your equipment profile (what gear you have at home)</li>
       <li>App preferences (weight unit, rest timer settings)</li>
     </ul>
-    <p>All of this data lives on your device using Apple's local storage framework. It is not uploaded to any server, cloud service, or third party.</p>
+
+    <h2>iCloud Sync</h2>
+    <p>BuildUp uses Apple's CloudKit to sync your workout data across all your devices signed into the same iCloud account. This means your workouts are available on every iPhone or iPad you own, and they survive if you delete and reinstall the app or switch to a new device.</p>
+    <p>Your data lives in your <strong>private CloudKit database</strong>. This is your personal slice of iCloud — only you can access it, through your own Apple ID. CR Studios cannot see, read, or access this data. Apple manages the storage and encryption.</p>
+    <p>If you don't have iCloud enabled or sign out of iCloud on your device, BuildUp will continue to work using local storage only. Your data will stay on the device but won't sync.</p>
 
     <h2>Apple Health (HealthKit)</h2>
     <p>BuildUp can read and write workout data to Apple Health if you grant permission. This includes:</p>
@@ -106,7 +110,7 @@
     <p>BuildUp lets you export your workout data as a CSV file. When you export, the file is created on your device and shared through iOS's standard share sheet. BuildUp does not retain a copy or transmit the exported data.</p>
 
     <h2>Children's Privacy</h2>
-    <p>BuildUp does not collect personal information from anyone, including children under 13. Since no data leaves the device, there is nothing to collect.</p>
+    <p>BuildUp does not collect personal information from anyone, including children under 13. The only data leaving the device goes to the user's own private iCloud — CR Studios has no access to it.</p>
 
     <h2>Changes to This Policy</h2>
     <p>If this policy changes, the updated version will be posted here with a new "last updated" date. Since BuildUp doesn't collect data, changes would most likely relate to new features that interact with external services.</p>
