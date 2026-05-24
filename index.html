@@ -66,60 +66,81 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">BuildUp — Home Lifting & Workout Tracker<br>Last updated: April 30, 2026</p>
+    <p class="subtitle">BuildUp — Home Lifting &amp; Workout Tracker<br>Effective date: May 23, 2026 · Last updated: May 23, 2026</p>
 
     <div class="highlight">
-      <p><strong>The short version:</strong> BuildUp stores your data on your device and in your personal iCloud account so it syncs across your devices and survives reinstalls. We don't collect it, we don't have access to it, and we can't see it.</p>
+      <p><strong>The short version:</strong> BuildUp stores your workout data on your iPhone. We do not operate a server. We do not include analytics, advertising, or tracking SDKs. The only third party that ever sees information about you is RevenueCat, and only when you purchase or restore a Premium subscription — and even then, only the minimum data Apple shares about App Store transactions. You can permanently delete all BuildUp data from your phone at any time in <strong>Settings → Delete All My Data</strong>.</p>
     </div>
 
-    <h2>What Data BuildUp Stores</h2>
-    <p>BuildUp stores the following information on your iPhone and in your personal iCloud account:</p>
+    <h2>1. What Data BuildUp Stores on Your Device</h2>
+    <p>When you use BuildUp, the following information is created and stored locally on your iPhone in Apple's SwiftData store:</p>
     <ul>
-      <li>Workout sessions (exercises, sets, reps, weight, duration)</li>
-      <li>Exercise library and custom exercises you create</li>
-      <li>Workout templates and programs</li>
-      <li>Your equipment profile (what gear you have at home)</li>
-      <li>App preferences (weight unit, rest timer settings)</li>
+      <li>Workout sessions you log (date, duration, exercises performed, sets, reps, weights)</li>
+      <li>Workout templates and custom exercises you create</li>
+      <li>Your preferences (weight unit, equipment profile, training goal)</li>
+      <li>Acceptance flags for our disclaimer and onboarding</li>
+    </ul>
+    <p>This data is held in the app's sandbox. It is not transmitted to a CR Studios server because <strong>CR Studios does not operate a server.</strong></p>
+    <p>If you have iCloud Drive enabled on your device, your iPhone's normal device backup may include this data — Apple manages that backup, not us. The dedicated CloudKit sync feature inside BuildUp is not enabled in the current release.</p>
+
+    <h2>2. Apple Health (HealthKit)</h2>
+    <p>If you grant BuildUp permission to access Apple Health, BuildUp uses the following data types:</p>
+    <p><strong>Read access:</strong></p>
+    <ul>
+      <li>Active energy burned (during a workout, to display calories)</li>
+      <li>Heart rate (during a workout, to display average heart rate)</li>
+    </ul>
+    <p><strong>Write access:</strong></p>
+    <ul>
+      <li>Workout sessions (your completed strength workouts, written so they appear in the Health app alongside your other activity)</li>
+    </ul>
+    <p>Health data accessed through HealthKit <strong>never leaves your device through BuildUp.</strong> We do not copy, transmit, or store it anywhere outside your phone's HealthKit store. You can revoke BuildUp's HealthKit permissions at any time in iOS Settings → Privacy &amp; Security → Health → BuildUp.</p>
+    <p>In line with Apple's HealthKit terms, BuildUp does not use HealthKit data for advertising or sell it to third parties.</p>
+
+    <h2>3. Premium Subscriptions (RevenueCat)</h2>
+    <p>When you tap "Upgrade to Premium" or "Restore Purchases," BuildUp uses RevenueCat (a third-party subscription management service) to talk to the App Store on your behalf.</p>
+    <p>In that flow, RevenueCat receives from Apple:</p>
+    <ul>
+      <li>An anonymous identifier tied to your purchase</li>
+      <li>The product you purchased and its status (active, expired, refunded)</li>
+      <li>Country and currency of the transaction</li>
+    </ul>
+    <p>RevenueCat does <strong>not</strong> receive your name, email address, Apple ID, or any of your workout data. We use RevenueCat purely to confirm whether your Premium entitlement is active.</p>
+    <p>RevenueCat's own privacy policy is available at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+
+    <h2>4. What We Do NOT Do</h2>
+    <ul>
+      <li>We do not include analytics SDKs (no Firebase Analytics, Mixpanel, Amplitude, etc.).</li>
+      <li>We do not include crash-reporting services that send data to us.</li>
+      <li>We do not include advertising SDKs or tracking pixels.</li>
+      <li>We do not collect your email address. The app has no account system.</li>
+      <li>We do not sell, rent, or share your data with anyone.</li>
+      <li>We do not have a back-end where your workouts live. If you lose or factory-reset your phone before iCloud backup runs, that data is gone — we cannot recover it for you.</li>
     </ul>
 
-    <h2>iCloud Sync</h2>
-    <p>BuildUp uses Apple's CloudKit to sync your workout data across all your devices signed into the same iCloud account. This means your workouts are available on every iPhone or iPad you own, and they survive if you delete and reinstall the app or switch to a new device.</p>
-    <p>Your data lives in your <strong>private CloudKit database</strong>. This is your personal slice of iCloud — only you can access it, through your own Apple ID. CR Studios cannot see, read, or access this data. Apple manages the storage and encryption.</p>
-    <p>If you don't have iCloud enabled or sign out of iCloud on your device, BuildUp will continue to work using local storage only. Your data will stay on the device but won't sync.</p>
-
-    <h2>Apple Health (HealthKit)</h2>
-    <p>BuildUp can read and write workout data to Apple Health if you grant permission. This includes:</p>
+    <h2>5. Your Controls</h2>
     <ul>
-      <li><strong>Read:</strong> Workout history, heart rate, and active energy burned</li>
-      <li><strong>Write:</strong> Completed workouts</li>
+      <li><strong>Delete all data:</strong> Settings → Delete All My Data wipes every workout, template, custom exercise, and preference from this device. This cannot be undone.</li>
+      <li><strong>Uninstall:</strong> Deleting BuildUp from your iPhone removes all of its data immediately.</li>
+      <li><strong>HealthKit:</strong> iOS Settings → Privacy &amp; Security → Health → BuildUp to revoke or change permissions.</li>
+      <li><strong>Notifications:</strong> iOS Settings → Notifications → BuildUp.</li>
     </ul>
-    <p>This integration is entirely optional. If you choose not to connect Apple Health, the app works without it. Health data stays within Apple's HealthKit framework on your device — BuildUp does not transmit it anywhere.</p>
 
-    <h2>Data We Collect</h2>
-    <p>None. BuildUp does not collect, transmit, or store any personal information on external servers. There are no user accounts, no email addresses, no analytics, no crash reporting services, and no advertising.</p>
+    <h2>6. Children</h2>
+    <p>BuildUp is not directed to children under 13. We do not knowingly collect any data from children. The app is rated 4+ on the App Store as a general-audience fitness tool, but parental supervision is encouraged.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>BuildUp uses <strong>RevenueCat</strong> to manage subscriptions. RevenueCat processes purchase receipts from Apple to verify your subscription status. It does not receive your name, email, or any personal information — only an anonymous app-specific identifier and purchase receipt data. You can review RevenueCat's privacy policy at <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a>.</p>
-    <p>BuildUp does not use any analytics tools or advertising networks. The app contains no tracking or ad code of any kind.</p>
-    <p>An optional button opens a YouTube search for exercise demonstration videos. This opens in Safari or the YouTube app — BuildUp does not embed or track this activity.</p>
+    <h2>7. Changes to This Policy</h2>
+    <p>If we make material changes to how BuildUp handles data, we will update the "Last updated" date at the top of this page and, where appropriate, re-prompt users to acknowledge an updated in-app disclaimer.</p>
 
-    <h2>Notifications</h2>
-    <p>BuildUp may send local notifications to remind you if a workout has been paused or inactive for an extended period. These notifications are generated on your device and are not sent through any external service. You can disable them in your iPhone's notification settings at any time.</p>
+    <h2>8. Contact</h2>
+    <p>CR Studios<br>
+    Email: <a href="mailto:crstudiosdev@gmail.com">crstudiosdev@gmail.com</a><br>
+    Burlington, Ontario, Canada</p>
 
-    <h2>Data Export</h2>
-    <p>BuildUp lets you export your workout data as a CSV file. When you export, the file is created on your device and shared through iOS's standard share sheet. BuildUp does not retain a copy or transmit the exported data.</p>
-
-    <h2>Children's Privacy</h2>
-    <p>BuildUp does not collect personal information from anyone, including children under 13. The only data leaving the device goes to the user's own private iCloud — CR Studios has no access to it.</p>
-
-    <h2>Changes to This Policy</h2>
-    <p>If this policy changes, the updated version will be posted here with a new "last updated" date. Since BuildUp doesn't collect data, changes would most likely relate to new features that interact with external services.</p>
-
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy or the app, you can reach us at <a href="mailto:crstudiosdev@gmail.com">crstudiosdev@gmail.com</a>.</p>
+    <p style="margin-top: 24px;"><a href="terms.html">View Terms of Service →</a></p>
 
     <div class="footer">
-      <p>&copy; 2026 CR Studios. BuildUp is an independent app made in Canada.</p>
+      <p>BuildUp is published by CR Studios. © 2026.</p>
     </div>
   </div>
 </body>
